@@ -1,12 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: sepia(0.4) saturate(1.5) contrast(0.8);
 }
 
 .container {
+    background-color: #edf3ee;
     max-width: 480px;
-    margin: 0 auto;
+    margin: 5% auto;
     padding: 20px;
 }
 
@@ -25,6 +31,7 @@ form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 form select {
@@ -39,8 +46,9 @@ form input[type="number"] {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 97%;
     margin-bottom: 20px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 
@@ -83,4 +91,21 @@ button {
 
 button:hover {
     background-color: #3e8e41;
+}
+
+.typewriter {
+    animation: typing 3s steps(30, end);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 30px;
+    border-right: 3px solid black;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
