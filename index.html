@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <h1 class="typewriter">Cálculo calorías diarias.</h1>
+        <h1 class="typewriter">Cálculo calorías.</h1>
         <form>
             <!-- <div class="form-group">
                 <label for="objetivo">Objetivo:</label>
@@ -55,6 +55,24 @@
         <br>
         <div id="resultado"></div>
     </div>
+
+    <div class="card-metodo">
+        <h2>Método de Harris-Benedict</h2>
+        <img src="ruta-de-la-imagen" alt="Foto autor" class="author-thumbnail">
+        <p>
+            El método de Harris-Benedict es una fórmula utilizada para estimar las necesidades calóricas diarias de una persona, tomando en cuenta su género, peso, altura, edad y nivel de actividad física.
+        </p>
+        <p>
+            Para hombres: TMB = 88.362 + (13.397 x peso en kg) + (4.799 x altura en cm) - (5.677 x edad en años)
+        </p>
+        <p>
+            Para mujeres: TMB = 447.593 + (9.247 x peso en kg) + (3.098 x altura en cm) - (4.330 x edad en años)
+        </p>
+        <p>
+            Después de calcular la TMB, se multiplica por un factor correspondiente al nivel de actividad física para obtener el total de calorías diarias recomendadas.
+        </p>
+    </div>
+
     <script src="js/calculadora.js"></script>
 
 </body>

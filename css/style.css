@@ -10,14 +10,16 @@ body {
 }
 
 .container {
-    background-color: #edf3ee;
+    background-color: #000000;
     max-width: 480px;
     margin: 5% auto;
     padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 form {
@@ -25,6 +27,7 @@ form {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
+    color: white;
 }
 
 form label {
@@ -50,13 +53,6 @@ form input[type="number"] {
     margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
 }
-
-
-/* form input[type="radio"] {
-    float: left;
-    margin-right: 10px;
-    margin-top: 3px;
-} */
 
 form input[type="submit"] {
     background-color: #008CBA;
@@ -107,5 +103,85 @@ button:hover {
     }
     to {
         width: 100%;
+    }
+}
+
+.card-metodo {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 8%;
+    width: 80%;
+}
+
+.card-metodo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-metodo p {
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 10% auto;
+        padding: 10px;
+    }
+    form input[type="number"] {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+    .card-metodo {
+        margin: 5%;
+        width: 80%;
+    }
+}
+
+
+/* Estilos para tabletas */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 90%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+    form input[type="number"] {
+        width: 90%;
+    }
+    button {
+        width: 90%;
+    }
+    .card-metodo {
+        margin: 5%;
+        width: 80%;
+    }
+}
+
+
+/* Estilos para pantallas medianas */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 80%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+    form input[type="number"] {
+        width: 80%;
+    }
+    button {
+        width: 80%;
+    }
+    .card-metodo {
+        margin: 5%;
+        width: 70%;
     }
 }
